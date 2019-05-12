@@ -1,2 +1,4 @@
 *.tfstate*
 .terraform/
+.gitignore
+.DS_Store
