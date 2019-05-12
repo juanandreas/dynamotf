@@ -1,0 +1,6 @@
+{
+    "exampleHashKey": {
+        "ComparisonOperator":"EQ",
+        "AttributeValueList": [{"S": "something"}]
+    }
+}

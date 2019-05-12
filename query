@@ -1,0 +1,4 @@
+#!/bin/bash
+
+aws dynamodb query --table-name DynamoPractice --key-conditions file://key.json
+# aws dynamodb scan --table-name DynamoPractice

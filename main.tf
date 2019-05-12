@@ -17,7 +17,7 @@ ITEM
 }
 
 resource "aws_dynamodb_table" "example" {
-  name           = "example-name"
+  name           = "DynamoPractice"
   read_capacity  = 10
   write_capacity = 10
   hash_key       = "exampleHashKey"
