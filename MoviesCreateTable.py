@@ -14,11 +14,17 @@
 from __future__ import print_function # Python 2/3 compatibility
 import boto3
 
-dynamodb = boto3.resource('dynamodb', region_name='us-west-1', endpoint_url="http://localhost:8000")
+client = boto3.client(
+    'dynamodb',
+    aws_access_key_id='AKIASGPWWRHP5DJBYP76',
+    aws_secret_access_key='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'
+)
+
+dynamodb = boto3.resource('dynamodb', region_name='us-west-1')
 
 
 table = dynamodb.create_table(
-    TableName='Movies',
+    TableName='DynamoPractice',
     KeySchema=[
         {
             'AttributeName': 'year',
@@ -47,3 +53,4 @@ table = dynamodb.create_table(
 )
 
 print("Table status:", table.table_status)
+
